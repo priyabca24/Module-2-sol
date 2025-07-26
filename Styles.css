@@ -1,0 +1,94 @@
+/* Reset default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Common Section Styles */
+.section {
+  position: relative;
+  border: 1px solid black;
+  padding: 40px 10px 10px 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+/* Unique Colors */
+#chicken {
+  background-color: #f7dada;
+}
+#chicken .title {
+  background-color: #d87a7a;
+  color: white;
+}
+
+#beef {
+  background-color: #ffe4e1;
+}
+#beef .title {
+  background-color: #d94a38;
+  color: white;
+}
+
+#sushi {
+  background-color: #fef6d8;
+}
+#sushi .title {
+  background-color: #f5d76e;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .section {
+    float: left;
+    width: 31%;
+    margin: 1%;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 48%;
+    margin: 1%;
+    float: left;
+  }
+
+  #sushi {
+    width: 98%;
+    clear: both;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
